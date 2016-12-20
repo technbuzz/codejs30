@@ -8,6 +8,17 @@
         body{
             background: steelblue;
         }
+        :root{
+            --base: #dd4d62;
+            --spacing: 10px;
+            --blur: 1px;
+        }
+        img{
+            padding: var(--spacing);
+            background: var(--base);
+            filter: blur(var(--blur));
+        }
+        .hl{color:var(--base)}
         
     </style>
 </head>
