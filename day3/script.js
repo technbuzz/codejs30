@@ -14,10 +14,7 @@ function updateClock(){
 
     var hours = now.getHours();
     var hoursDegree = (hours/12) * 360;
-    hHand.style.transform = `rotate(${hoursDegree}deg)`;
-
-    console.log(seconds);
-    
+    hHand.style.transform = `rotate(${hoursDegree}deg)`;    
 }
 
 window.setInterval(updateClock, 1000);
