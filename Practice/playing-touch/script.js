@@ -1,7 +1,17 @@
 var objects = document.querySelectorAll('.object');
+const width = window.innerWidth-50;
+const height = window.innerHeight-50;
 objects.forEach(function(item){
     item.addEventListener('touchmove', function(event){
         // if there is one finger in the event
+        var pageX = event.targetTouches[0].pageX;        
+        var pageY = event.targetTouches[0].pageY;
+        
+        console.log(width,height);
+        
+
+        if(pageX < 0 || pageY < 0 || pageX > width || pageY > height) return;
+
         if(event.targetTouches.length == 1){
             var touch = event.targetTouches[0];
             // place the element where it is
@@ -29,8 +39,4 @@ canvas.addEventListener('touchmove', function(event){
         ctx.stroke();
     }
     
-}, false)
-
-window.addEventListener('click', function(){
-
-}, )
+}, false);
