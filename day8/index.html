@@ -65,11 +65,24 @@
             lastY = e.offsetY;
 
         });
+        canvas.addEventListener('touchstart' , function(e){
+            isDrawing = true;
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+
+        });
         canvas.addEventListener('mousemove' , draw);
+        canvas.addEventListener('touchmove' , draw);
         canvas.addEventListener('mouseup' , function(){
             isDrawing = false;
         });
+        canvas.addEventListener('touchend' , function(){
+            isDrawing = false;
+        });
         canvas.addEventListener('mouseout' , function(){
+            isDrawing = false;
+        });
+        canvas.addEventListener('touchcancel' , function(){
             isDrawing = false;
         });
     </script>
