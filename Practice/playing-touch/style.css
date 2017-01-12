@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+.object{
+    border:2px solid blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(0,0,255,0.3);
+}
+
+.obj1{
+    top: 100px;
+}
+.obj2{
+    left: 100px;
+}
+
+.obj3{
+    left: 100px;
+    top: 100px;
+}
+
+.obj4{
+    left: 200px;
+    top: 200px;
+}
