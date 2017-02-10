@@ -13,6 +13,12 @@
       margin: 0 auto;
       background: #fff;
       padding:20px;
+      padding-top: 0;
+    }
+    header{
+      margin-bottom: 10px;
+      border-bottom: 1px solid;
+      padding-top: 10px;
     }
     .item{
       margin-bottom: 10px;
@@ -29,23 +35,32 @@
       background: #aaa;
       text-decoration: line-through;
     }
+
+    input:checked + label{
+      text-decoration: line-through;
+      
+    }
   </style>
 </head>
 <body>
-  <main role="main">
-    <div class="container">
-      <form action="">
-        <div class="item"><input type="checkbox" id="item-1"><label for="item-1">This is Item Number 1</label></div>
-        <div class="item"><input type="checkbox" id="item-2"><label for="item-2">This is Item Number 2</label></div>
-        <div class="item"><input type="checkbox" id="item-3"><label for="item-3">This is Item Number 3</label></div>
-        <div class="item"><input type="checkbox" id="item-4"><label for="item-4">This is Item Number 4</label></div>
-        <div class="item"><input type="checkbox" id="item-5"><label for="item-5">This is Item Number 5</label></div>
-        <div class="item"><input type="checkbox" id="item-6"><label for="item-6">This is Item Number 6</label></div>
-        <div class="item"><input type="checkbox" id="item-7"><label for="item-7">This is Item Number 7</label></div>
-        <div class="item"><input type="checkbox" id="item-8"><label for="item-8">This is Item Number 8</label></div>
-      </form>
-    </div>
-  </main>
+  <h1 id="lead">I am a leading text.</h1>
+  <div class="container">
+    <main role="main">
+        <header>
+          <div class="header__item"><input type="checkbox"  id="all"><label for="all">Select All</label></div>
+        </header>
+        <form action="">
+          <div class="item"><input type="checkbox" id="item-1"><label for="item-1">This is Item Number 1</label></div>
+          <div class="item"><input type="checkbox" id="item-2"><label for="item-2">This is Item Number 2</label></div>
+          <div class="item"><input type="checkbox" id="item-3"><label for="item-3">This is Item Number 3</label></div>
+          <div class="item"><input type="checkbox" id="item-4"><label for="item-4">This is Item Number 4</label></div>
+          <div class="item"><input type="checkbox" id="item-5"><label for="item-5">This is Item Number 5</label></div>
+          <div class="item"><input type="checkbox" id="item-6"><label for="item-6">This is Item Number 6</label></div>
+          <div class="item"><input type="checkbox" id="item-7"><label for="item-7">This is Item Number 7</label></div>
+          <div class="item"><input type="checkbox" id="item-8"><label for="item-8">This is Item Number 8</label></div>
+        </form>
+    </main>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
