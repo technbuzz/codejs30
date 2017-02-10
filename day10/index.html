@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 10 - Hold shift to Select All</title>
+  <style>
+    html,body{
+      height: 100%;
+      background: steelblue;
+    }
+    .container{
+      max-width: 300px;
+      margin: 0 auto;
+      background: #fff;
+      padding:20px;
+    }
+    .item{
+      margin-bottom: 10px;
+    }
+    input{
+      transition: all 0.5s ease-out;
+    }
+
+    label{
+      margin-left: 10px;
+
+    }
+    .hl{
+      background: #aaa;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <main role="main">
+    <div class="container">
+      <form action="">
+        <div class="item"><input type="checkbox" id="item-1"><label for="item-1">This is Item Number 1</label></div>
+        <div class="item"><input type="checkbox" id="item-2"><label for="item-2">This is Item Number 2</label></div>
+        <div class="item"><input type="checkbox" id="item-3"><label for="item-3">This is Item Number 3</label></div>
+        <div class="item"><input type="checkbox" id="item-4"><label for="item-4">This is Item Number 4</label></div>
+        <div class="item"><input type="checkbox" id="item-5"><label for="item-5">This is Item Number 5</label></div>
+        <div class="item"><input type="checkbox" id="item-6"><label for="item-6">This is Item Number 6</label></div>
+        <div class="item"><input type="checkbox" id="item-7"><label for="item-7">This is Item Number 7</label></div>
+        <div class="item"><input type="checkbox" id="item-8"><label for="item-8">This is Item Number 8</label></div>
+      </form>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
