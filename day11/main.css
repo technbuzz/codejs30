@@ -1,0 +1,39 @@
+body{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.player {
+    position: relative;
+}
+
+.player__controls {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.progress {
+    background: #c3885e;
+    height: 20px;
+    width: 100%;
+}
+
+video {
+    height: 480px;
+    /* max-width: 100%; */
+}
+
+.progress__filled {
+    background: #d05600;
+    width: 20%;
+    height: 100%;
+}
+
+button.player__button {
+    vertical-align: top;
+}
+
+input.player__slider {
+    width: 32%;
+}
