@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 12 - Keycode Detection</title>
+</head>
+<body>
+  <script>
+    var pressed = [];
+    window.addEventListener('keyup', function(e){
+      console.log(e.keyCode);
+      pressed.push(e.key);
+      console.log(pressed);
+      
+    })
+  </script>
+</body>
+</html>
